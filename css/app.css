@@ -164,3 +164,20 @@ textarea { width: 100%; min-height: 150px; font: inherit; padding: 12px; border-
 #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 .flash-hl { animation: hl 1.6s ease-out; }
 @keyframes hl { from { box-shadow: 0 0 0 3px var(--accent); } to { box-shadow: 0 0 0 0 transparent; } }
+
+/* Motion: views and cards rise in gently; buttons respond to touch. */
+@media (prefers-reduced-motion: no-preference) {
+  #view > * { animation: rise .38s cubic-bezier(.2,.7,.2,1) both; }
+  #view > *:nth-child(2) { animation-delay: .03s; } #view > *:nth-child(3) { animation-delay: .06s; }
+  #view > *:nth-child(4) { animation-delay: .09s; } #view > *:nth-child(5) { animation-delay: .12s; }
+  #view > *:nth-child(n+6) { animation-delay: .15s; }
+  .btn, .icon-btn, .chip, .check-opt, .tabs button { transition: transform .12s, background-color .2s, border-color .2s; }
+  .btn:active, .icon-btn:active, .chip:active, .check-opt:active { transform: scale(.96); }
+  .icon-btn.on { animation: pulse 1.2s ease-in-out infinite; }
+  .back { animation: rise .3s ease-out both; }
+  .check-opt.wrong { animation: shake .35s; }
+  .bar i, .week b i { transition: width .6s, height .6s; }
+}
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes pulse { 50% { box-shadow: 0 0 0 6px var(--brand-soft); } }
+@keyframes shake { 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
