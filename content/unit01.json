@@ -1,0 +1,118 @@
+{
+  "id": "u01",
+  "no": 1,
+  "title": "First Visit: A Sore Back",
+  "titleZh": "初診：腰痛（ACC 傷科病人）",
+  "scenario": {
+    "en": "Sarah, a Kiwi office worker, hurt her lower back lifting a box at work. It's her first time having acupuncture, and she's a bit nervous. You'll greet her, ask about the pain, sort out ACC, explain what acupuncture does in plain English, get her consent and give aftercare advice.",
+    "zh": "Sarah 是紐西蘭的上班族，上週在公司搬箱子扭到下背。她第一次針灸，有點緊張。這一課你要：打招呼、問診、處理 ACC、用白話解釋針灸在做什麼、取得同意、交代術後注意事項。"
+  },
+  "goals": [
+    {"en": "Ask clear questions about pain: where, what kind, how bad, does it spread.", "zh": "把痛問清楚：位置、性質、程度、有沒有放射。"},
+    {"en": "Explain 氣滯血瘀 and 不通則痛 without jargon.", "zh": "不用術語解釋「氣滯血瘀」和「不通則痛」。"},
+    {"en": "Ask for consent the Kiwi way, and give simple aftercare.", "zh": "用紐西蘭人習慣的方式取得同意，並交代術後照護。"}
+  ],
+  "dialogue": [
+    {"who": "P", "en": "Kia ora, Sarah. Come on through and have a seat.", "zh": "Sarah 你好，請進，請坐。", "note": "Kia ora（你好）在紐西蘭對任何人都可以說，很自然、很友善。Come on through ＝「請進來（裡面）」。"},
+    {"who": "C", "en": "Kia ora. Thanks.", "zh": "你好，謝謝。"},
+    {"who": "P", "en": "So, what's brought you in today?", "zh": "今天是哪裡不舒服來看呢？", "note": "比 What's your problem? 柔和得多。What's your problem? 聽起來像「你有什麼毛病？」，有點兇。"},
+    {"who": "C", "en": "I hurt my lower back lifting a heavy box at work last Tuesday.", "zh": "上週二在公司搬重箱子，傷到下背。"},
+    {"who": "P", "en": "Ah, that's no fun. Where exactly does it hurt? Can you show me?", "zh": "啊，那真難受。確切是哪裡痛？可以指給我看嗎？"},
+    {"who": "C", "en": "Just here, on the right side. It's worse in the mornings.", "zh": "就這裡，右邊。早上比較嚴重。"},
+    {"who": "P", "en": "Is it a sharp pain, or more of a dull ache?", "zh": "是刺痛，還是比較悶悶的痠痛？", "note": "sharp pain ＝ 刺痛、尖銳的痛；dull ache ＝ 悶痛、痠痛。這組幾乎每個病人都會用到。"},
+    {"who": "C", "en": "Mostly a dull ache, but it gets sharp when I bend over.", "zh": "大多是痠痛，但彎腰時會變成刺痛。"},
+    {"who": "P", "en": "Does it go down your leg at all? Any numbness or pins and needles?", "zh": "會往腿傳下去嗎？有沒有麻木或刺麻感？", "note": "pins and needles ＝ 像針刺的麻感，紐西蘭病人很常這樣講。若有腿無力、大小便失禁，要立刻轉介 GP 或急診（紅旗症狀）。"},
+    {"who": "C", "en": "No, it stays in my back.", "zh": "沒有，只在背上。"},
+    {"who": "P", "en": "Good. And on a scale of one to ten, how bad is it right now?", "zh": "好。從一到十分，現在痛幾分？"},
+    {"who": "C", "en": "About a six.", "zh": "大概六分。"},
+    {"who": "P", "en": "Okay. Since it happened at work, ACC can help cover your treatment. I can lodge the claim for you today.", "zh": "好。因為是在工作時受傷，ACC 可以幫忙負擔治療費。我今天就可以幫你送出申請。", "note": "lodge a claim ＝ 提出申請（紐西蘭、澳洲常用說法，美國比較少用）。"},
+    {"who": "C", "en": "Oh, sweet as. I didn't know that.", "zh": "喔，太好了，我都不知道。", "note": "sweet as ＝「太好了／沒問題」，非常紐西蘭的口語。病人說了你聽得懂就好，不一定要自己講。"},
+    {"who": "P", "en": "Have you had acupuncture before?", "zh": "你以前針灸過嗎？"},
+    {"who": "C", "en": "No, never. I'm a bit nervous about the needles, to be honest.", "zh": "沒有。老實說，我有點怕針。"},
+    {"who": "P", "en": "That's totally normal. The needles are really fine, much thinner than the ones for a blood test. Most people feel a little pinch, then a dull, heavy feeling. That's a good sign.", "zh": "這很正常。針非常細，比抽血的針細很多。大部分人會感覺輕輕一刺，然後是悶悶、沉沉的感覺，那是好現象。", "note": "「dull, heavy feeling」就是得氣。先告訴病人會有這種感覺，她就不會嚇到。"},
+    {"who": "C", "en": "What does acupuncture actually do?", "zh": "針灸到底在做什麼？"},
+    {"who": "P", "en": "In Chinese medicine, we say pain often comes from things getting stuck, when blood and energy aren't flowing well. The needles help get things moving again. In Western terms, they can help relax tight muscles and calm the pain signals.", "zh": "中醫認為，痛常常是因為「卡住了」——氣血流動不順。針能幫助它們重新流動。用西醫的話說，針可以幫助放鬆緊繃的肌肉、緩和疼痛訊號。", "note": "先講中醫的說法，再補一句西醫的說法，懷疑派的病人也聽得進去。注意是 can help，不說 will cure。"},
+    {"who": "C", "en": "Right, that makes sense.", "zh": "喔，這樣講我懂了。"},
+    {"who": "P", "en": "Is it okay if I put a few needles in your lower back and a couple in your legs? You can ask me to stop at any time.", "zh": "我在你下背扎幾針、腿上扎兩針，可以嗎？你隨時都可以叫我停。", "note": "這就是知情同意。紐西蘭《醫療與身心障礙服務消費者權利守則》規定病人有權被告知、有權同意或拒絕。每次下針前都要問。"},
+    {"who": "C", "en": "Yep, that's fine.", "zh": "好，可以。"},
+    {"who": "P", "en": "Great. Pop up on the table for me, face down. Let me know if you get too warm or too cold.", "zh": "好。請上治療床，趴著。太熱或太冷都跟我說。", "note": "pop up on the table ＝ 請上床（很口語、很親切）。face down 趴著；face up 躺著（仰臥）。"},
+    {"who": "P", "en": "All done. How are you feeling?", "zh": "好了。感覺怎麼樣？"},
+    {"who": "C", "en": "A bit lighter, actually.", "zh": "其實覺得輕鬆一點了。"},
+    {"who": "P", "en": "Good stuff. You might feel a bit tired or sore tonight. That's normal. Drink plenty of water, keep moving gently, and avoid heavy lifting for a few days.", "zh": "很好。今晚你可能會有點累或痠，這是正常的。多喝水，輕微活動，這幾天避免提重物。"},
+    {"who": "P", "en": "Let's book you in again for next week.", "zh": "我們幫你約下週再來。", "note": "book you in ＝ 幫你預約（英式、紐西蘭說法）。"},
+    {"who": "C", "en": "Cheers. See you then.", "zh": "謝啦，到時見。", "note": "Cheers ＝ 謝謝／再見，紐西蘭人天天在用。"}
+  ],
+  "phrases": [
+    {"id": "u01p1", "simple": "Where pain?", "better": "Where exactly does it hurt?", "zh": "確切哪裡痛？"},
+    {"id": "u01p2", "simple": "Pain sharp or not?", "better": "Is it a sharp pain, or more of a dull ache?", "zh": "是刺痛，還是悶悶的痠痛？"},
+    {"id": "u01p3", "simple": "Pain go to leg?", "better": "Does it go down your leg at all?", "zh": "會往腿傳下去嗎？"},
+    {"id": "u01p4", "simple": "How much pain?", "better": "On a scale of one to ten, how bad is it right now?", "zh": "從一到十分，現在痛幾分？"},
+    {"id": "u01p5", "simple": "Don't scared. Needle small.", "better": "That's totally normal. The needles are really fine.", "zh": "這很正常，針非常細。"},
+    {"id": "u01p6", "simple": "I do needle now, OK?", "better": "Is it okay if I put a few needles in your lower back?", "zh": "我在你下背扎幾針，可以嗎？"},
+    {"id": "u01p7", "simple": "Lie down. Face down.", "better": "Pop up on the table for me, face down.", "zh": "請上治療床，趴著。"},
+    {"id": "u01p8", "simple": "Drink water. No carry heavy.", "better": "Drink plenty of water, and avoid heavy lifting for a few days.", "zh": "多喝水，這幾天避免提重物。"},
+    {"id": "u01p9", "simple": "Come again next week.", "better": "Let's book you in again for next week.", "zh": "我們幫你約下週再來。"}
+  ],
+  "concepts": [
+    {"id": "u01c1", "zh": "氣", "py": "qì", "std": "qi", "kiwi": "Your body's energy, and the way it keeps everything moving and working.", "avoid": "Don't open with \"Qi is a mysterious life force.\" Many Kiwis are a bit sceptical. Keep it practical: energy, flow, function.", "zhNote": "先講「功能、流動」，不講玄的。紐西蘭人對太神祕的說法會打折扣。"},
+    {"id": "u01c2", "zh": "氣滯血瘀", "py": "qì zhì xuè yū", "std": "qi stagnation and blood stasis", "kiwi": "Things are a bit stuck. Blood and energy aren't flowing well in that area, so it hurts.", "avoid": "Avoid \"Your blood is stagnant\" or \"Your blood is dirty.\" It sounds alarming, like a blood disease.", "zhNote": "stagnant blood 聽起來像血液有病，會嚇到人。用 stuck、not flowing well。"},
+    {"id": "u01c3", "zh": "不通則痛", "py": "bù tōng zé tòng", "std": "where there is blockage, there is pain", "kiwi": "When things get stuck, it hurts. When they flow again, the pain eases.", "avoid": "A word-for-word proverb can sound strange. Say the idea in two short sentences.", "zhNote": "成語直譯聽起來怪，拆成兩句白話。"},
+    {"id": "u01c4", "zh": "經絡", "py": "jīng luò", "std": "meridians and collaterals (channels)", "kiwi": "Pathways on the body that we use like a map to choose points.", "avoid": "Don't say meridians are nerves or blood vessels. If asked, say: \"They're a traditional map. Some points do sit near nerves and muscles.\"", "zhNote": "不要說經絡就是神經或血管。被問到就說是傳統的「地圖」，有些穴位剛好在神經肌肉附近。"},
+    {"id": "u01c5", "zh": "穴位", "py": "xué wèi", "std": "acupuncture point (acupoint)", "kiwi": "Specific spots on the body where we put the needles.", "avoid": "\"Acupoint\" is fine, but most patients just say \"point\" or \"spot\".", "zhNote": "病人多半說 point 或 spot。"},
+    {"id": "u01c6", "zh": "得氣", "py": "dé qì", "std": "deqi (needle sensation)", "kiwi": "A dull, heavy, achy feeling around the needle. That's what we're looking for.", "avoid": "Don't just say \"You will feel the qi.\" Describe the actual feeling so they aren't scared.", "zhNote": "直接描述感覺：dull, heavy, achy。"},
+    {"id": "u01c7", "zh": "腰痛", "py": "yāo tòng", "std": "low back pain", "kiwi": "A sore lower back. Patients often say \"I've done my back in\" or \"I've tweaked my back.\"", "avoid": "\"Waist pain\" is wrong in English. 腰 here means the lower back, not the waist.", "zhNote": "腰痛不是 waist pain！英文說 lower back。I've done my back in ＝ 我把腰弄傷了（口語）。"},
+    {"id": "u01c8", "zh": "扭傷", "py": "niǔ shāng", "std": "sprain / strain", "kiwi": "\"You've strained a muscle\" (muscle) or \"You've sprained it\" (ligament, joint).", "avoid": "Strain is for muscles, sprain is for ligaments like the ankle. Patients mix them up too, so don't worry too much.", "zhNote": "strain 是肌肉拉傷，sprain 是韌帶扭傷（如腳踝）。"},
+    {"id": "u01c9", "zh": "痠痛", "py": "suān tòng", "std": "aching pain / soreness", "kiwi": "Achy, sore, a dull ache.", "avoid": "\"Sour pain\" is a word-for-word translation and doesn't work in English.", "zhNote": "「痠」不能翻 sour。"},
+    {"id": "u01c10", "zh": "刺痛", "py": "cì tòng", "std": "stabbing / sharp pain", "kiwi": "A sharp pain, a stabbing pain, a shooting pain (if it travels).", "avoid": "Shooting pain means it travels, like down the leg. Listen for it: it may point to the nerves.", "zhNote": "shooting pain 是會竄的痛，可能跟神經有關，要多問。"},
+    {"id": "u01c11", "zh": "麻木／刺麻", "py": "má mù / cì má", "std": "numbness / tingling", "kiwi": "Numb (no feeling), pins and needles (tingling).", "avoid": "Numbness plus leg weakness, or trouble with bladder or bowels, is a red flag. Refer to a GP or ED straight away.", "zhNote": "麻木加上腿無力、或大小便困難＝紅旗症狀，立刻轉介 GP 或急診。"},
+    {"id": "u01c12", "zh": "留針", "py": "liú zhēn", "std": "needle retention", "kiwi": "\"I'll leave the needles in for about twenty minutes. Just relax.\"", "avoid": "Don't say \"I retain the needles.\" It's correct but stiff.", "zhNote": "retain 太生硬，說 leave the needles in。"},
+    {"id": "u01c13", "zh": "暈針", "py": "yūn zhēn", "std": "needle fainting", "kiwi": "\"Some people feel a bit light-headed or faint. If you do, tell me straight away.\"", "avoid": "Warn first-timers before you start, especially if they're hungry or tired.", "zhNote": "初診、空腹、疲勞的病人下針前先提醒。"},
+    {"id": "u01c14", "zh": "知情同意", "py": "zhī qíng tóng yì", "std": "informed consent", "kiwi": "\"Is it okay if I…? You can ask me to stop at any time.\"", "avoid": "In New Zealand this is a legal right under the Code of Rights. Ask before needling, cupping or any new treatment.", "zhNote": "在紐西蘭這是法定權利。下針、拔罐或換新療法前都要問。"}
+  ],
+  "kiwi": [
+    {"title": "What is ACC?", "titleZh": "什麼是 ACC？", "en": "ACC (the Accident Compensation Corporation) covers injuries from accidents for everyone in New Zealand, at work, at home or playing sport. Acupuncturists registered with ACC can lodge a claim for the patient, so patients often come to you without seeing a GP first. ACC usually pays part of the fee, and the patient may pay a small part-charge.", "zh": "ACC（意外事故補償局）負擔紐西蘭所有人因意外造成的傷害，不論在工作、在家或運動時。在 ACC 登記的針灸師可以直接幫病人送申請，所以病人常常不先看 GP 就來找你。ACC 通常付一部分，病人可能自付一小部分。", "say": ["Was it an accident? Then ACC may be able to help cover your treatment.", "I can lodge the claim for you today."]},
+    {"title": "Kiwi words you'll hear", "titleZh": "病人常講的紐西蘭口語", "en": "Sweet as: great, no problem. Cheers: thanks or bye. Good stuff: great. No worries: you're welcome, no problem. I've done my back in: I've hurt my back. Keen?: do you want to? Chemist: pharmacy.", "zh": "Sweet as：太好了／沒問題。Cheers：謝謝或再見。Good stuff：很好。No worries：不客氣／沒問題。I've done my back in：我把腰弄傷了。Keen?：要不要？Chemist：藥局。", "say": ["No worries.", "Good stuff."]},
+    {"title": "Consent is a right", "titleZh": "同意是病人的權利", "en": "The Code of Health and Disability Services Consumers' Rights gives every patient the right to be fully informed and to choose. Before needling, tell them what you'll do and ask. A friendly way is \"Is it okay if…?\" and \"You can ask me to stop at any time.\"", "zh": "《醫療與身心障礙服務消費者權利守則》規定每位病人有權被完整告知、有權選擇。下針前先說明要做什麼，再問可不可以。親切的說法是 Is it okay if…? 加上 You can ask me to stop at any time.", "say": ["Is it okay if I put a few needles in your lower back?", "You can ask me to stop at any time."]},
+    {"title": "A bridge: Te Whare Tapa Whā", "titleZh": "溝通的橋樑：毛利健康四面牆", "en": "Many Kiwis know the Māori health model Te Whare Tapa Whā: health is a house with four walls, the body (taha tinana), mind and feelings (taha hinengaro), family and community (taha whānau) and spirit (taha wairua). If one wall is weak, the house isn't stable. It's a natural way into Chinese medicine's whole-person view.", "zh": "很多紐西蘭人知道毛利人的健康模型 Te Whare Tapa Whā：健康像一間有四面牆的房子，身體、心理情緒、家人與社群、靈性。一面牆弱了，房子就不穩。用它來接中醫的整體觀很自然。", "say": ["Like Te Whare Tapa Whā, Chinese medicine looks at the whole person, not just the sore spot."]},
+    {"title": "Promise less, explain more", "titleZh": "少保證，多說明", "en": "In New Zealand, health claims must be backed up. Say \"can help\", \"many people find\" or \"we'll see how you respond\", never \"this will cure it\". Patients trust you more when you're honest about what acupuncture can and can't do.", "zh": "在紐西蘭，療效宣稱要有根據。說 can help、many people find、we'll see how you respond，不要說 this will cure it。誠實說明針灸能做什麼、不能做什麼，病人反而更信任你。", "say": ["Many people find it helps. Let's see how you respond after two or three sessions."]},
+    {"title": "NZ spelling", "titleZh": "紐西蘭拼字", "en": "New Zealand uses British-style spelling: colour, centre, programme, practise (the verb), organise, sceptical, mum. In clinic notes and texts to patients, use these spellings.", "zh": "紐西蘭用英式拼字：colour、centre、programme、practise（動詞）、organise、sceptical、mum。寫病歷、傳訊息給病人都用這種拼法。", "say": []}
+  ],
+  "shadow": [
+    "So, what's brought you in today?",
+    "Where exactly does it hurt? Can you show me?",
+    "Is it a sharp pain, or more of a dull ache?",
+    "Does it go down your leg at all? Any numbness or pins and needles?",
+    "On a scale of one to ten, how bad is it right now?",
+    "Since it happened at work, ACC can help cover your treatment.",
+    "The needles are really fine, much thinner than the ones for a blood test.",
+    "Is it okay if I put a few needles in your lower back and a couple in your legs? You can ask me to stop at any time.",
+    "Pop up on the table for me, face down.",
+    "Drink plenty of water, keep moving gently, and avoid heavy lifting for a few days."
+  ],
+  "writing": {
+    "task": "Write a short aftercare text to Sarah after her first session.",
+    "taskZh": "幫 Sarah 寫一則初診後的衛教簡訊。",
+    "checklist": [
+      {"en": "A friendly greeting and thanks", "zh": "友善的招呼與道謝"},
+      {"en": "What's normal tonight (tired, a bit sore)", "zh": "今晚哪些反應是正常的（累、有點痠）"},
+      {"en": "Two or three self-care tips", "zh": "兩三個自我照護建議"},
+      {"en": "When to call you (a red flag)", "zh": "什麼情況要打電話給你（紅旗症狀）"},
+      {"en": "The next appointment", "zh": "下次預約時間"},
+      {"en": "A warm sign-off", "zh": "溫暖的結尾"}
+    ],
+    "model": "Hi Sarah, thanks for coming in today. You might feel a bit tired or sore tonight. That's normal. Drink plenty of water, keep moving gently and avoid heavy lifting for a few days. If the pain gets worse or you notice numbness in your leg, give me a call. See you next Tuesday at 10am. Cheers!",
+    "modelZh": "Sarah 你好，謝謝你今天來。今晚可能會有點累或痠，這是正常的。多喝水、輕微活動，這幾天避免提重物。如果疼痛加劇或腿開始麻，請打電話給我。下週二早上十點見，謝謝！"
+  },
+  "check": [
+    {"q": "A patient says, \"I've done my back in.\" What do they mean?", "qZh": "病人說 I've done my back in，是什麼意思？", "options": ["They've hurt their back", "They've finished their back exercises", "Their back is better now"], "answer": 0, "card": "u01c7"},
+    {"q": "Which is the most natural way to ask about the type of pain?", "qZh": "問疼痛性質，哪一句最自然？", "options": ["What kind your pain?", "Is it a sharp pain, or more of a dull ache?", "Describe the pain quality to me."], "answer": 1, "card": "u01p2"},
+    {"q": "How would you explain 氣滯血瘀 to a Kiwi patient?", "qZh": "怎麼向紐西蘭病人解釋「氣滯血瘀」？", "options": ["Your blood is stagnant and dirty.", "Things are a bit stuck. Blood and energy aren't flowing well, so it hurts.", "Your qi is blocked by bad energy."], "answer": 1, "card": "u01c2"},
+    {"q": "Before you put the needles in, what should you say?", "qZh": "下針之前應該說什麼？", "options": ["Is it okay if I put a few needles in your lower back?", "Lie down, I start now.", "This will cure your back."], "answer": 0, "card": "u01c14"},
+    {"q": "A patient has numbness, leg weakness and trouble passing urine. What do you do?", "qZh": "病人麻木、腿無力、排尿困難，你該怎麼做？", "options": ["Needle the lower back as usual", "Refer them to a GP or ED straight away", "Tell them to come back next week"], "answer": 1, "card": "u01c11"},
+    {"q": "\"Pop up on the table for me\" means…", "qZh": "Pop up on the table for me 的意思是……", "options": ["Please get on the treatment table", "Put your bag on the table", "Jump quickly"], "answer": 0, "card": "u01p7"},
+    {"q": "How do you say 腰痛 in English?", "qZh": "「腰痛」英文怎麼說？", "options": ["Waist pain", "Low back pain", "Kidney pain"], "answer": 1, "card": "u01c7"},
+    {"q": "Which word describes the 得氣 feeling to a patient?", "qZh": "向病人描述「得氣」用哪個說法？", "options": ["A dull, heavy, achy feeling", "An electric shock", "A burning feeling"], "answer": 0, "card": "u01c6"},
+    {"q": "Which promise fits New Zealand rules best?", "qZh": "哪一句最符合紐西蘭的規範？", "options": ["This will cure your back pain.", "Many people find it helps. Let's see how you respond.", "Acupuncture always works."], "answer": 1, "card": "u01c14"},
+    {"q": "Which spelling is used in New Zealand?", "qZh": "哪個是紐西蘭的拼法？", "options": ["color", "colour"], "answer": 1, "card": null}
+  ]
+}
